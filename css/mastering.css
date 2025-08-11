@@ -1,0 +1,683 @@
+:root {
+    --main-color: rgb(23, 100, 138);
+    --second-color: rgb(22, 150, 101);
+}
+@media (min-width: 1200px) {
+    .form,
+    .tasks {
+        width: 600px;
+        padding: 20px;  
+    }
+    .form h2 {
+        width: calc(100% - 60px);
+        font-size: 20px;
+        padding: 15px;
+    }
+    .form input[type="text"] {
+        width: calc(100% - 60px);
+        padding: 15px;
+        font-size: 18px;
+        font-weight: 600;
+        margin: 20px;
+    }
+    .form input[type="submit"] {
+        padding: 15px;
+        width: calc(100% - 20px);
+        margin: 20px;
+        font-size: 20px;
+    }
+    .tasks .div-task {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 10px;
+        padding: 20px;
+        font-size: 18px;
+        margin: 20px;
+        font-weight: 600;
+    }
+    .link-task {
+        width: 40%;
+        font-size: 18px;
+    }
+    .del-task {
+        width: 40%;
+    }
+    .deadline {
+        margin: 20px auto;
+        font-size: 14px;
+        width: calc(100% - 20px);
+    }
+    .deadline i,
+    .deadline .deadline-text {
+        padding: 10px;
+    }
+}
+@media (max-width: 1200px) {
+    .form,
+    .tasks {
+        width: 500px;
+        padding: 20px;
+    }
+    .form h2 {
+        width: calc(100% - 60px);
+        font-size: 20px;
+        padding: 15px;
+    }
+    .form input[type="text"] {
+        width: calc(100% - 60px);
+        padding: 15px;
+        font-size: 18px;
+        font-weight: 600;
+        margin: 10px;
+    }
+    .form input[type="submit"] {
+        padding: 15px;
+        width: calc(100% - 20px);
+        margin: 10px;
+        font-size: 20px;
+        font-weight: 600;
+    }
+    .tasks .div-task {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 10px;
+        padding: 20px;
+        font-size: 18px;
+        margin: 20px;
+        font-weight: 600;
+    }
+    .tasks .div-task .del-task {
+        width: 40%;
+        margin: 10px 0;
+        font-size: 18px;
+        font-weight: 400;
+    }
+    .link-task {
+        width: 40%;
+        font-size: 18px;
+    }
+    .deadline {
+        margin: 20px auto;
+        font-size: 14px;
+        width: calc(100% - 20px);
+    }
+    .deadline i,
+    .deadline .deadline-text {
+        padding: 10px;
+    }
+}
+@media (max-width: 992px) {
+    .form,
+    .tasks {
+        width: 500px;
+        padding: 20px;
+    }
+    .form h2 {
+        width: calc(100% - 60px);
+        font-size: 20px;
+        padding: 15px;
+    }
+    .form input[type="text"] {
+        width: calc(100% - 60px);
+        font-size: 16px;
+        font-weight: 400;
+        margin: 10px;
+    }
+    .form input[type="submit"] {
+        padding: 10px;
+        width: calc(100% - 20px);
+        margin: 10px;
+        font-size: 16px;
+        font-weight: 400;
+    }
+    .tasks .div-task {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        padding: 10px;
+        font-size: 18px;
+        margin: 10px;
+        font-weight: 300;
+    }
+    .tasks .div-task .del-task {
+        width: 30%;
+        font-size: 18px;
+        font-weight: 600;
+    }
+    .tasks .div-task .link-task {
+        width: 30%;
+        font-size: 18px;
+    }
+    .deadline {
+        margin: 20px auto;
+        font-size: 14px;
+        width: calc(100% - 20px);
+    }
+    .deadline i, 
+    .deadline .deadline-text {
+        padding: 10px;
+    }
+}
+@media (max-width: 768px) {
+    .form,
+    .tasks {
+        width: calc(100% - 60px);
+        padding: 10px;
+    }
+    .form h2 {
+        width: calc(100% - 20px);
+        font-size: 18px;
+        padding: 10px 0;
+    }
+    .form input[type="text"] {
+        width: calc(100% - 40px);
+        padding: 10px;
+        font-size: 14px;
+        font-weight: 300;
+        margin: 10px;
+    }
+    .form input[type="submit"] {
+        padding: 10px;
+        width: calc(100% - 20px);
+        margin: 10px;
+        font-size: 18px;
+        font-weight: 300;
+    }
+    .tasks .div-task {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 10px;
+        /* padding: 10px; */
+        margin: 20px 10px; 
+        font-weight: 300;
+    }
+    .tasks .div-task .text-task,
+    .tasks .div-task .deadline-span {
+        white-space: wrap;
+        padding: 10px;
+        font-size: 15px;
+    }
+    .tasks .div-task .link-task {
+        width: 30%;
+        font-size: 15px;
+        padding: 10px;
+    }
+    .tasks .div-task .del-task {
+        padding: 10px;
+        width: 30%;
+        font-size: 15px;
+        font-weight: 400;
+    }
+    .deadline {
+        margin: 20px auto;
+        font-size: 14px;
+        width: calc(100% - 20px);
+    }
+    .deadline i,
+    .deadline .deadline-text {
+        padding: 10px;
+    }
+}
+.form {
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    position: relative;
+}
+.form h2 {
+    background-color: var(--main-color);
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    border: 2px solid var(--main-color);
+    text-align: center;
+}
+.form input[type="text"] {
+    border: 2px solid var(--main-color);
+    background-color: white;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.form input[type="text"]:focus {
+    outline: none;
+    color: rgb(18, 84, 84);
+}
+.form input[type="text"]::placeholder{
+    font-size: 11px;
+    font-family: monospace;
+    color: rgb(69, 143, 180);
+}
+.form input[type="text"]:focus::placeholder{
+    opacity: 0;
+}
+.form input[type="submit"] {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+    background-color: rgb(22, 150, 101);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    color: white;
+    border: 2px solid rgb(20, 136, 111);
+    cursor: pointer;
+}
+.tasks {
+    background-color: #eee;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    margin: 20px auto;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.div-task {
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    user-select: none;
+    background-color: #9a05f7;
+    border: 1px solid #a8a4a4;
+    cursor: pointer;
+    transition: 0.2s;
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+    -ms-transition: 0.2s;
+    -o-transition: 0.2s;
+}
+.div-task.done {
+    opacity: 0.5;
+}
+.text-task{
+    font-weight: bold;
+    height: fit-content;
+    text-align: center;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    position: relative; 
+}
+.deadline-span {
+    font-size: 14px;
+    font-weight: bold;
+    height: fit-content;
+    text-align: center;
+    color: rgb(219, 212, 212);
+    padding: 10px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    position: relative;
+    margin-bottom: 20px;
+}
+.text-task::after{
+    content: "";
+    position: absolute;
+    width: calc(100% - 60px);
+    left: 30px;
+    bottom: 0;
+    height: 1px;
+    background-color: #a8a4a4;
+}
+.deadline-span::after {
+    content: "";
+    position: absolute;
+    width: calc(100% - 60px);
+    left: 30px;
+    bottom: 0;
+    height: 0.1px;
+    background-color: #f5f5f5;
+}
+.link-task {
+    height: fit-content;
+    text-decoration: none;
+    font-family:cursive;
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: 700;
+    color: var(--main-color);
+    background-color: white;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    white-space: nowrap;
+    text-align: center;
+    border: 2px solid #777;
+}
+.div-task.done .link-task{
+    color: var(--main-color);
+}
+.div-task .link-task:hover {
+    color: var(--main-color);
+}
+.del-task {
+    padding: 10px;
+    border-radius: 10px;
+    background-color: red;
+    text-align: center;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    color: white;
+    cursor: pointer;
+}
+.deadline {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: monospace;
+    background-color: white;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.deadline .deadline-text {
+    flex: 1;
+    margin-right: 20px;
+    color: rgb(114, 113, 113);
+    background-color: white;
+    padding-right: 20px; 
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    position: relative;
+}
+.deadline .deadline-text::before {
+    content: "Set Your Deadline";
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 15px;
+    color: grey;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+}
+.deadline .deadline-text.added-deadline::before {
+    z-index: -1;
+}
+.deadline i {
+    position: relative;
+    font-size: 30px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    color: var(--main-color);
+    cursor: pointer;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+.deadline i:hover {
+    color: var(--second-color);
+}
+.deadline .days.activated {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(15%, 1fr));
+}
+.days {
+    position: absolute;
+    right: 50px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 500%;
+    display: none;
+    text-align: center;
+    background-color: white;
+    border: 2px solid var(--main-color);
+    border-radius: 10px;
+    font-weight: 400;
+    font-family: monospace;
+    color: black;
+    font-size: 18px;
+    padding: 10px;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.days::before {
+    content: "";
+    position: absolute;
+    right: -20px;
+    top: 50%;
+    transform: translateY(-50%);
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent transparent transparent var(--main-color);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+}
+.days span {
+    user-select: none;
+    padding: 5px;
+    margin-top: 10px;
+}
+.days span.active {
+    cursor: pointer;
+    transition: 0.2s;
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+    -ms-transition: 0.2s;
+    -o-transition: 0.2s;
+    position: relative;
+}
+.days span.selected,
+.days span.activated {
+    position: relative;
+}
+.days span.selected::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background-color: var(--main-color);
+    transition: 0.1s;
+    -webkit-transition: 0.1s;
+    -moz-transition: 0.1s;
+    -ms-transition: 0.1s;
+    -o-transition: 0.1s;
+}
+.days span.activated::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--main-color);
+    transition: 0.1s;
+    -webkit-transition: 0.1s;
+    -moz-transition: 0.1s;
+    -ms-transition: 0.1s;
+    -o-transition: 0.1s;
+}
+.days span.activated:hover::after {
+    width: 100%;
+}
+.days span.activated:hover,
+.days span.selected {
+    color: var(--main-color);
+    background-color: #eee;
+}
+.days span.deactivated {
+    opacity: 0.2;
+    position: relative;
+}
+.days span.deactivated::before {
+    content: "";
+    position: absolute;
+    width: 50%;
+    left: 25%;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    background-color: gray;
+    height: 1px;
+}
+.deadline-text {
+    user-select: none;
+}
+.setted-deadline {
+    font-size: 16px;
+    user-select: none;
+}
+/* Black and light customisations */
+.headline {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: calc(100% - 20px);
+}
+i.theme-mode {
+    font-size: 25px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    top: -10px;
+    left: -10px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+i.blacked-theme-mode {
+    background-color: black;
+    color: white;
+}
+.blacked-form {
+    background-color: #a4a0a0;
+}
+.blacked-tasks {
+    background-color: #615d5d;
+}
+.blacked-div-task {
+    background-color: rgb(41, 38, 38);
+}
+/* Footer Customisation */
+footer {
+    margin-top: calc(100% - 100px);
+    left: 0;
+    width: 100%;
+}
+.footer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 10;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 100%;
+    background-color: #191919;
+}
+.footer-message {
+    font-size: 14px;
+    font-weight: 400;
+    color: white;
+    margin: 20px auto 0;
+}
+.footer .links {
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer .links a {
+    text-decoration: none;
+}
+.footer .links i {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    color: #b9b9b9;
+    background-color: #313131;
+    margin-right: 10px;
+    font-size: 20px;
+    transition: var(--main-transition);
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    -o-transition: var(--main-transition);
+}
+
+.footer .links .whats i:hover {
+    background-color: #128c7e;
+}
+
+.footer .links .face i:hover {
+    background-color: #1877f2;
+}
+
+.footer .links .insta i:hover {
+    background-color: #833AB4;
+}
+

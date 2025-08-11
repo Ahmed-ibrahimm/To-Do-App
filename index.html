@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-Do-App</title>
+    <!--Css links -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/mastering.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <!-- Google Fonts link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet"
+    />
+    </head>
+    <body>
+        <div class="form">
+            <div class="headline">
+                <i class="fa-solid fa-moon theme-mode"></i>
+                <h2>Write Your Tasks</h2>
+            </div>
+            <input type="text" name="" id="inp" maxlength="100" placeholder="Enter your task name." />
+            <input type="text" id="link" maxlength="50" placeholder="Enter your task link (Optional)." />
+            <div class="deadline">
+            <span class="deadline-text"></span>
+            <i class="fa-solid fa-clock icon">
+                <div class="days"></div>
+            </i>
+        </div>
+        <input type="submit" value="Add task" id="submit" />
+    </div>
+    <div class="tasks"></div>
+    
+    <footer>
+        <div class="footer">
+            <p class="footer-message"></p>
+            <div class="links">
+                <a href="https://wa.me/201040267974" target="_blank" class="whats"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="https://www.facebook.com/share/1EW4x5bxRz/" target="_blank" class="face"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/theahmedibrahem?igsh=MWd2Z2FkeXhuaWJlMg==" target="_blank" class="insta"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+         </div>
+    </footer>
+    <script src="todo.js"></script>
+    </body>
+</html>
